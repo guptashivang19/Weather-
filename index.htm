@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <button id="themeSwitch" onclick="toggleTheme()">
+      <div class="circle"></div>
+    </button>
+
+    <center>
+      <div id="input">
+        <h1>Weather API</h1>
+        <input
+          type="text"
+          placeholder="Enter your city name"
+          id="input1"
+          style="background-color: black; color: white; border: black"
+        />
+        <button
+          onclick="fetchcity()"
+          style="background-color: black; color: white; border: black"
+        >
+          Search
+        </button>
+      </div>
+    </center>
+    <script src="index.js"></script>
+    <div id="tbody"></div>
+  </body>
+</html>

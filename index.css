@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(79, 76, 117);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  .light-mode {
+    background-color: #f0f0f0;
+    color: #222;
+  }
+
+  #themeSwitch {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 60px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  #themeSwitch .circle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+
+  #themeSwitch.active {
+    background-color: #ffcc00;
+  }
+
+  #themeSwitch.active .circle {
+    transform: translateX(30px);
+    background-color: black;
+  }
+
+  #input {
+    height: auto;
+    width: 500px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    background-color: rgb(59, 74, 157);
+  }
+
+  #tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #weatherdata {
+    height: auto;
+    width: 500px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    background-color: rgb(59, 74, 157);
+  }
+
+  #gmap {
+    text-align: right;
+    height: 400px;
+    width: 500px;
+  }
+
+  #gmap_canva {
+    margin: 20px;
+    height: 390px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+  }
